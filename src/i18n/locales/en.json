@@ -1,0 +1,27 @@
+{
+  "app": {
+    "title": "Cryptocurrency Tracker",
+    "news": "Crypto News",
+    "prices": "Major Coins",
+    "loading": "Loading...",
+    "error": "Error loading data",
+    "refresh": "Refresh"
+  },
+  "coin": {
+    "price": "Price",
+    "change24h": "24h Change",
+    "marketCap": "Market Cap",
+    "volume": "Volume",
+    "rank": "Rank"
+  },
+  "news": {
+    "readMore": "Read More",
+    "source": "Source",
+    "published": "Published"
+  },
+  "language": {
+    "english": "English",
+    "vietnamese": "Vietnamese"
+  }
+}
+
