@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getTopCryptocurrencies, type Coin } from '../apis/cryptoApi';
 import { useI18n } from '../i18n';
 import { FiTrendingUp, FiTrendingDown } from 'react-icons/fi';
-
+import {ButtonCommon, GradientButton, ButtonBorderGradient, Input} from "@tnbt/react-favorit-style"
 const CryptoPrices = () => {
   const { t } = useI18n();
   
@@ -43,12 +43,12 @@ const CryptoPrices = () => {
     return (
       <div className="text-center py-8">
         <p className="text-red-400 mb-4">{t('app.error')}</p>
-        <button
+        <GradientButton
           onClick={() => refetch()}
-          className="px-4 py-2 bg-gradient-to-tr from-orange-400 via-orange-500 to-red-500 text-white rounded-lg hover:opacity-90 transition"
+          // className="px-4 py-2 bg-gradient-to-tr from-orange-400 via-orange-500 to-red-500 text-white rounded-lg hover:opacity-90 transition"
         >
           {t('app.refresh')}
-        </button>
+        </GradientButton>
       </div>
     );
   }
@@ -57,13 +57,17 @@ const CryptoPrices = () => {
     <div className="space-y-4">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-white">{t('app.prices')}</h2>
-        <button
+        <GradientButton size='md'
           onClick={() => refetch()}
-          className="px-4 py-2 bg-gradient-to-tr from-orange-400 via-orange-500 to-red-500 text-white rounded-lg hover:opacity-90 transition text-sm"
+          // className="px-4 py-2 bg-gradient-to-tr from-orange-400 via-orange-500 to-red-500 text-white rounded-lg hover:opacity-90 transition text-sm"
         >
           {t('app.refresh')}
-        </button>
+        </GradientButton>
+                <GradientButton variant="purple">Purple Button</GradientButton>
+                        <ButtonBorderGradient variant="purpleBlue">Purple</ButtonBorderGradient>
+                                <ButtonBorderGradient variant="cyanBlue">Purple</ButtonBorderGradient>
       </div>
+<div><Input /></div>
       
       <div className="grid gap-4">
         {coins?.map((coin) => {
