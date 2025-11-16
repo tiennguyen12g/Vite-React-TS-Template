@@ -1,58 +1,22 @@
+import { TableWithDragColumn, TableWithResizeColumn, TableCommon, type TableHeader } from "@tnbt/react-favorit-style"
 import React, { useState } from "react";
-import {
-  ButtonCommon,
-  GradientButton,
-  ButtonBorderGradient,
-  Input,
-  type TableHeader,
-  TableWithDragColumn,
-  TableCommon,
-  TableWithResizeColumn,
-  SelectGray,
 
-  ConfirmDelete,
-} from "@tnbt/react-favorit-style";
-import { useI18n } from "./i18n";
-import LanguageSwitcher from "./components/LanguageSwitcher";
-export default function Test() {
+export default function TableExample() {
   const [selected, setSelected] = useState<any[]>([]);
   const handleGetSelected = (data: any[]) => {
     console.log("data", data);
     setSelected(data);
   };
-  const [valueSelect, setValueSelect] = useState("");
-  const handleSelect = (value: any) => {
-    console.log("e", value);
-    setValueSelect(value);
-  };
-  const { locale, t } = useI18n(); // Get both locale and t() function
-  const [isDeleteOpen, setIsDeleteOpen] = useState(false);
-  const handleDelete = () => {
-    console.log("Item deleted successfully!");
-  };
-
   return (
     <div>
-      <LanguageSwitcher />
-      <ButtonCommon onClick={() => setIsDeleteOpen(true)} variant="delete">
-        {t("button.delete")}
-      </ButtonCommon>
-      {/* Example 1: Using contentKey with params for dynamic translation */}
-      <ConfirmDelete
-        onExcute={handleDelete}
-        setIsModalOpen={setIsDeleteOpen}
-        isModalOpen={isDeleteOpen}
-        contentKey="content.deleteOrders"
-        contentParams={{ count: 5 }}
-      />
-      {/* <SelectGray options={selectData} value={valueSelect} onChange={(e) => handleSelect(e)} /> */}
-      <GradientButton variant="purple">Purple Button</GradientButton>
-      <ButtonBorderGradient variant="purpleBlue">Purple</ButtonBorderGradient>
-      <ButtonBorderGradient variant="cyanBlue">Purple</ButtonBorderGradient>
-      <ButtonBorderGradient variant="greenBlue">Purple</ButtonBorderGradient>
-      <h3 className="text-[22px] font-[500] mt-5 mb-3">Table common for apply specific with to each column</h3>
+      <div className="my-2.5 font-[400] text-[14px] text-left">
+        * Note: Using div to wrap the table to hide the scroll bar's corner display outside of table when apply border radius for table
+      </div>
+      <div className="my-2.5 font-[400] text-[14px] text-left">The value in the cell can align to left; center or right</div>
+      
+      <h3 className="my-2.5 font-[500] text-[18px] text-left">Table common for apply specific with to each column</h3>
       <TableCommon data={commonTableData} pageSize={5} initialColumnWidths={{ 0: "150px", 1: "260px", 2: "140px" }} />
-      <h3 className="text-[22px] font-[500] mt-5">Table with resize column's width</h3>
+      <h3 className="my-2.5 font-[500] text-[18px] text-left">Table with resize column's width</h3>
       <div className="overflow-hidden rounded-lg border border-gray-300 z-[11] my-[10px]">
         <TableWithResizeColumn
           data={tableData}
@@ -64,7 +28,7 @@ export default function Test() {
           onSelectionChange={(ids) => handleGetSelected(ids)}
         />
       </div>
-      <h3 className="text-[22px] font-[500] mt-5">Table with drag column</h3>
+      <h3 className="my-2.5 font-[500] text-[18px] text-left">Table with drag column</h3>
       <div className="overflow-hidden rounded-lg border border-gray-300 z-[11] my-[10px]">
         <TableWithDragColumn
           data={tableData}
@@ -137,7 +101,6 @@ const commonTableData = {
     },
   ],
 };
-
 export const tableData = {
   headers: [
     { key: "select", label: "", type: "checkbox", sticky: true, width: 50 },
@@ -383,7 +346,3 @@ export const tableData = {
     },
   ],
 };
-const selectData = [
-  { key: "vi", label: "Tiếng Việt" },
-  { key: "en", label: "English" },
-];

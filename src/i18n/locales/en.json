@@ -22,6 +22,160 @@
   "language": {
     "english": "English",
     "vietnamese": "Vietnamese"
+  },
+  "profile": {
+    "title": "Profile Settings",
+    "subtitle": "Manage your account settings and preferences",
+    "personalInfo": {
+      "title": "Personal Information",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "address": "Address",
+      "bio": "Bio",
+      "bioPlaceholder": "Tell us about yourself...",
+      "avatar": "Profile Picture",
+      "changeAvatar": "Change Avatar",
+      "removeAvatar": "Remove Avatar"
+    },
+    "account": {
+      "title": "Account Settings",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "deleteAccount": "Delete Account",
+      "deleteAccountWarning": "This action cannot be undone. All your data will be permanently deleted."
+    },
+    "preferences": {
+      "title": "Preferences",
+      "language": "Language",
+      "theme": "Theme",
+      "themeLight": "Light",
+      "themeDark": "Dark",
+      "themeSystem": "System",
+      "notifications": "Notifications",
+      "emailNotifications": "Email Notifications",
+      "pushNotifications": "Push Notifications",
+      "smsNotifications": "SMS Notifications"
+    },
+    "privacy": {
+      "title": "Privacy & Security",
+      "twoFactorAuth": "Two-Factor Authentication",
+      "enable2FA": "Enable 2FA",
+      "disable2FA": "Disable 2FA",
+      "loginHistory": "Login History",
+      "activeSessions": "Active Sessions",
+      "dataExport": "Export Data",
+      "dataExportDesc": "Download a copy of your data"
+    },
+    "buttons": {
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "update": "Update",
+      "delete": "Delete Account",
+      "export": "Export Data"
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "phoneInvalid": "Please enter a valid phone number",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordsNotMatch": "Passwords do not match"
+    },
+    "success": {
+      "profileUpdated": "Profile updated successfully",
+      "passwordChanged": "Password changed successfully",
+      "avatarUpdated": "Avatar updated successfully"
+    }
+  },
+  "auth": {
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "login": {
+      "title": "Login",
+      "subtitle": "Choose login method below",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot Password",
+      "signIn": "Sign In",
+      "orConnectWith": "Or connect with",
+      "noAccount": "Don't have an account"
+    },
+    "signup":{
+      "title": "Sign Up",
+      "subtitle": "Please fill in the infomation below",
+      "name" : "Full Name",
+      "confirmPassword":"Confirm Password",
+      "agreeToTerms": "Agree To Terms",
+      "createAccount": "Create Account",
+      "orSignUpWith": "or Sign Up with",
+      "haveAccount": "Already have an account?"
+    }
+  },
+  "confirmDelete": {
+    "title": "Delete",
+    "areYouSure": "Are you sure?",
+    "warning": "Warning:",
+    "warningMessage": "This action cannot be undone. This will permanently delete.",
+    "action": {
+      "cancel": "Cancel",
+      "delete": "Delete"
+    }
+  },
+  "confirmLogout": {
+    "title": "Confirm Logout",
+    "heading": "Logout Confirmation",
+    "description": "Are you sure you want to logout? You will need to sign in again to access your account.",
+    "remindContent": "Any unsaved changes will be lost. Make sure to save your work before logging out.",
+    "action": {
+      "stayLoggedIn": "Stay Logged In",
+      "logout": "Logout"
+    }
+  },
+  "confirmResetSettings": {
+    "title": "Reset Settings",
+    "heading": "Reset All Settings",
+    "description": "This will restore all settings to their default values. Your personal data and files will not be affected.",
+    "willBeReset": "The following will be reset:",
+    "action": {
+      "resetSettings": "Reset Settings"
+    }
+  },
+  "statusModal": {
+    "action": {
+      "close": "Close"
+    }
+  },
+  "commonModal": {
+    "title": "My Modal",
+    "action": {
+      "close": "Close"
+    }
+  },
+  "animatedInfoModal": {
+    "animationProperties": "Animation Properties"
+  },
+  "button": {
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "hello": "Hello World",
+    "info": "Info"
+  },
+  "content": {
+    "deleteOrders": "Delete {{count}} orders",
+    "deleteItems": "Delete {{count}} items",
+    "successCommon": "Successful operation",
+    "warningCommon": "Actions that may involve risk"
   }
 }
 

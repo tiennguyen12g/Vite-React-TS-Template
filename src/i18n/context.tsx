@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect,  type ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from 'react';
 import enTranslations from './locales/en.json';
 import viTranslations from './locales/vi.json';
 
@@ -27,11 +27,11 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     localStorage.setItem('locale', locale);
   }, [locale]);
 
-  const setLocale = (newLocale: Locale) => {
+  const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
-  };
+  }, []);
 
-  const t = (key: string): string => {
+  const t = useCallback((key: string): string => {
     const keys = key.split('.');
     let value: any = translations[locale];
     
@@ -40,10 +40,16 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     }
     
     return value || key;
-  };
+  }, [locale]);
+
+  // Memoize context value to ensure re-renders when locale changes
+  const contextValue = useMemo(
+    () => ({ locale, setLocale, t }),
+    [locale, setLocale, t]
+  );
 
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t }}>
+    <I18nContext.Provider value={contextValue}>
       {children}
     </I18nContext.Provider>
   );

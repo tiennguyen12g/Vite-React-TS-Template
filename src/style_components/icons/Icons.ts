@@ -30,6 +30,11 @@ import { MdDeleteOutline } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 
 import { FaUserCircle } from "react-icons/fa";
+
+// -- Social Icon
+import { FcGoogle } from "react-icons/fc";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 export const icons = {
     "check": FaCheck,
     "close": IoClose,
@@ -63,4 +68,8 @@ export const icons = {
     "edit": MdEdit,
 
     "user": FaUserCircle,
+
+    "google": FcGoogle,
+    "facebook": FaSquareFacebook,
+    "github": FaGithub,
 }

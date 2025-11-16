@@ -5,6 +5,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@tnbt-style-custom": ["./src/style_components/StyleComponents"]
-    }
+    },
+        "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
   }
 }

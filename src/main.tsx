@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+// @ts-ignore or // @ts-expect-error: 
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import "@tnbt/react-favorit-style/styles.css";

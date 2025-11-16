@@ -22,6 +22,170 @@
   "language": {
     "english": "Tiếng Anh",
     "vietnamese": "Tiếng Việt"
+  },
+  "profile": {
+    "title": "Cài Đặt Hồ Sơ",
+    "subtitle": "Quản lý cài đặt tài khoản và tùy chọn của bạn",
+    "personalInfo": {
+      "title": "Thông Tin Cá Nhân",
+      "name": "Họ và Tên",
+      "email": "Địa Chỉ Email",
+      "phone": "Số Điện Thoại",
+      "address": "Địa chỉ",
+      "bio": "Giới Thiệu",
+      "bioPlaceholder": "Hãy cho chúng tôi biết về bạn...",
+      "avatar": "Ảnh Đại Diện",
+      "changeAvatar": "Đổi Ảnh Đại Diện",
+      "removeAvatar": "Xóa Ảnh Đại Diện"
+    },
+    "account": {
+      "title": "Cài Đặt Tài Khoản",
+      "changePassword": "Đổi Mật Khẩu",
+      "currentPassword": "Mật Khẩu Hiện Tại",
+      "newPassword": "Mật Khẩu Mới",
+      "confirmPassword": "Xác Nhận Mật Khẩu Mới",
+      "deleteAccount": "Xóa Tài Khoản",
+      "deleteAccountWarning": "Hành động này không thể hoàn tác. Tất cả dữ liệu của bạn sẽ bị xóa vĩnh viễn."
+    },
+    "preferences": {
+      "title": "Tùy Chọn",
+      "language": "Ngôn Ngữ",
+      "theme": "Giao Diện",
+      "themeLight": "Sáng",
+      "themeDark": "Tối",
+      "themeSystem": "Hệ Thống",
+      "notifications": "Thông Báo",
+      "emailNotifications": "Thông Báo Email",
+      "pushNotifications": "Thông Báo Đẩy",
+      "smsNotifications": "Thông Báo SMS"
+    },
+    "privacy": {
+      "title": "Quyền Riêng Tư & Bảo Mật",
+      "twoFactorAuth": "Xác Thực Hai Yếu Tố",
+      "enable2FA": "Bật 2FA",
+      "disable2FA": "Tắt 2FA",
+      "loginHistory": "Lịch Sử Đăng Nhập",
+      "activeSessions": "Phiên Đăng Nhập Đang Hoạt Động",
+      "dataExport": "Xuất Dữ Liệu",
+      "dataExportDesc": "Tải xuống bản sao dữ liệu của bạn"
+    },
+    "buttons": {
+      "save": "Lưu Thay Đổi",
+      "cancel": "Hủy",
+      "update": "Cập Nhật",
+      "delete": "Xóa Tài Khoản",
+      "export": "Xuất Dữ Liệu"
+    },
+    "validation": {
+      "nameRequired": "Tên là bắt buộc",
+      "emailRequired": "Email là bắt buộc",
+      "emailInvalid": "Vui lòng nhập email hợp lệ",
+      "phoneInvalid": "Vui lòng nhập số điện thoại hợp lệ",
+      "passwordRequired": "Mật khẩu là bắt buộc",
+      "passwordMinLength": "Mật khẩu phải có ít nhất 8 ký tự",
+      "passwordsNotMatch": "Mật khẩu không khớp"
+    },
+    "success": {
+      "profileUpdated": "Cập nhật hồ sơ thành công",
+      "passwordChanged": "Đổi mật khẩu thành công",
+      "avatarUpdated": "Cập nhật ảnh đại diện thành công"
+    }
+  },
+"auth": {
+    "email": "Địa chỉ Email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận Mật khẩu",
+    "login": {
+      "title": "Đăng nhập",
+      "subtitle": "Chọn phương thức đăng nhập bên dưới",
+      "rememberMe": "Ghi nhớ tôi",
+      "forgotPassword": "Quên Mật khẩu",
+      "signIn": "Đăng nhập",
+      "orConnectWith": "Hoặc kết nối với",
+      "noAccount": "Chưa có tài khoản"
+    },
+    "signup": {
+      "title": "Đăng ký",
+      "subtitle": "Vui lòng điền thông tin bên dưới",
+      "name": "Họ và Tên",
+      "confirmPassword": "Xác nhận Mật khẩu",
+      "agreeToTerms": "Đồng ý với Điều khoản",
+      "createAccount": "Tạo Tài khoản",
+      "orSignUpWith": "Hoặc Đăng ký với",
+      "haveAccount": "Đã có tài khoản?"
+    }
+  },
+  "confirmDelete": {
+    "title": "Xóa",
+    "areYouSure": "Bạn có chắc chắn?",
+    "warning": "Cảnh báo:",
+    "warningMessage": "Hành động này không thể hoàn tác. Điều này sẽ xóa vĩnh viễn.",
+    "action": {
+      "cancel": "Hủy",
+      "delete": "Xóa"
+    }
+  },
+  "confirmLogout": {
+    "title": "Xác nhận đăng xuất",
+    "heading": "Xác nhận đăng xuất",
+    "description": "Bạn có chắc chắn muốn đăng xuất? Bạn sẽ cần đăng nhập lại để truy cập tài khoản.",
+    "remindContent": "Mọi thay đổi chưa lưu sẽ bị mất. Hãy đảm bảo lưu công việc của bạn trước khi đăng xuất.",
+    "action": {
+      "stayLoggedIn": "Ở lại đăng nhập",
+      "logout": "Đăng xuất"
+    }
+  },
+  "confirmResetSettings": {
+    "title": "Đặt lại cài đặt",
+    "heading": "Đặt lại tất cả cài đặt",
+    "description": "Điều này sẽ khôi phục tất cả cài đặt về giá trị mặc định. Dữ liệu và tệp cá nhân của bạn sẽ không bị ảnh hưởng.",
+    "willBeReset": "Những mục sau sẽ được đặt lại:",
+    "action": {
+      "resetSettings": "Đặt lại cài đặt"
+    }
+  },
+  "statusModal": {
+    "action": {
+      "close": "Đóng"
+    }
+  },
+    "infoModal": {
+    "action": {
+      "close": "Đóng"
+    }
+  },
+    "warningModal": {
+    "action": {
+      "close": "Đóng"
+    }
+  },
+  "commonModal": {
+    "title": "Modal của tôi",
+    "action": {
+      "close": "Đóng"
+    }
+  },
+  "animatedInfoModal": {
+    "animationProperties": "Thuộc tính hoạt hình"
+  },
+  "button": {
+    "delete": "Xóa",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "submit": "Gửi",
+    "edit": "Chỉnh sửa",
+    "close": "Đóng",
+    "confirm": "Xác nhận",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "hello": "Xin chào",
+    "info": "Thông tin"
+  },
+  "content": {
+    "deleteOrders": "Xóa {{count}} đơn hàng",
+    "deleteItems": "Xóa {{count}} mục",
+    "successCommon": "Thao tác thành công",
+    "warningCommon": "Thao tác có thể rủi ro!"
   }
 }
 
