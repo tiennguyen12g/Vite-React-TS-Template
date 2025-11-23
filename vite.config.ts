@@ -9,11 +9,24 @@ export default defineConfig({
   server: {
     port:5180
   },
-  base: "/",
+  base: "/Vite-React-TS-Template/",   // 👈 REQUIRED for GitHub Pages
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@tnbt-style-custom": path.resolve(__dirname, "./src/style_components/StyleComponents"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@ui": path.resolve(__dirname, "./src/components/ui"),
+      "@pages": path.resolve(__dirname, "./src/pages"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@apis": path.resolve(__dirname, "./src/apis"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
+      "@types": path.resolve(__dirname, "./src/types"),
+      "@config": path.resolve(__dirname, "./src/config"),
+      "@state": path.resolve(__dirname, "./src/state"),
+      "@styles": path.resolve(__dirname, "./src/styles"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
+      "@layout": path.resolve(__dirname, "./src/layout"),
+      "@i18n": path.resolve(__dirname, "./src/i18n"),
+      "@playground": path.resolve(__dirname, "./src/playground"),
     },
   },
 });

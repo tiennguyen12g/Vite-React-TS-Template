@@ -3,7 +3,7 @@ import { Input, ButtonCommon } from "@tnbt/react-favorit-style";
 import { FaGithub, FaGoogle, FaFacebook } from "react-icons/fa";
 import { MdEmail, MdLock, MdPerson } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import { icons } from "@/style_components/icons/Icons";
+import { icons } from "@/components/ui/icons/Icons";
 interface SignUpProps {
   onSignUp?: (name: string, email: string, password: string) => void;
   onSocialSignUp?: (provider: "github" | "google" | "facebook") => void;

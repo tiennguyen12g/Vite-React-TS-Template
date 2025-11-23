@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Input, ButtonCommon, SelectGray, ConfirmDelete } from "@tnbt/react-favorit-style";
-import { useI18n } from "../i18n"; // Customer's i18n
+import { useI18n } from "../../i18n"; // Customer's i18n
 import { MdPerson, MdEmail, MdPhone, MdLock, MdDelete, MdDownload } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
-import ModalExample from "@/examples/ModalExample";
+import ModalExample from "@/playground/examples/ModalExample";
 import { PiMapPinAreaFill } from "react-icons/pi";
 
 interface ProfileProps {

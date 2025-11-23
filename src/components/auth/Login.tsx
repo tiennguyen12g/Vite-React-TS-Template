@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Input, ButtonCommon } from "@tnbt/react-favorit-style";
-import { icons } from "@/style_components/icons/Icons";
+import { icons } from "@/components/ui/icons/Icons";
 import { MdEmail, MdLock } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 interface LoginProps {

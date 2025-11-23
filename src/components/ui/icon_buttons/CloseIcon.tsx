@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import clsx from "clsx";
 
@@ -18,18 +17,3 @@ export default function CloseIcon({ className, size = 14, onClick }: Props) {
     />
   );
 }
-
-// ex:
-//   <CloseIcon className="text-[#fdb7b7] hover:text-[#f01c1c]"  size={30}/>
-//   <CloseIcon size={30} className="text-orange-500 hover:text-orange-700" />
-
-const data = {
-  header: [
-    //list header title
-],
-rows: [
-    {
-        //something
-    }
-]
-};

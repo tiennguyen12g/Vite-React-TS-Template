@@ -169,7 +169,11 @@
     "back": "Back",
     "next": "Next",
     "hello": "Hello World",
-    "info": "Info"
+    "info": "Info",
+    "download": "Download",
+    "uploadFile": "Upload File",
+    "uploadCloud": "Upload Cloud"
+
   },
   "content": {
     "deleteOrders": "Delete {{count}} orders",

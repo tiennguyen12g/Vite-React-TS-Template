@@ -1,12 +1,17 @@
 import "./App.css"
-import "./i18n/i18next"; // Initialize react-i18next
-import { I18nProvider } from "./i18n"; // Your own i18n (if you still need it)
-import { QueryProvider } from "./tanstack_query/QueryProvider";
-import AuthPage from "./components/auth/AuthPage";
-import Profile from "./demo/Profile";
+import "@/i18n/i18next"; // Initialize react-i18next
+import { I18nProvider } from "@/i18n"; // Your own i18n (if you still need it)
+import { QueryProvider } from "@/state/tanstack_query/QueryProvider";
+import AuthPage from "@/components/auth/AuthPage";
+import Profile from "@/playground/demo/Profile";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Test from "./demo/Test";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+// import Test from "@/playground/demo/Test";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { icons } from "./components/ui/icons/Icons";
+import AuthLayout from "@/layout/AuthLayout";
+import Test from "./playground/demo/Test";
+
+
 const AppContent = () => {
   const { pathname } = useLocation();
 

@@ -15,7 +15,7 @@ import {
   GroupButton,
 } from "@tnbt/react-favorit-style";
 import ModalExample from "../examples/ModalExample";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+// import { DownloadButton } from "@/style_components/common_buttons/ListFavoritButton";
 
 import TableExample from "../examples/TableExample";
 import InputExample from "../examples/InputExample";
@@ -70,7 +70,13 @@ export default function Test() {
       )}
 
       {viewMode === "style" && (
+      
+
+          
     <div>
+      <div>
+        {/* {DownloadButton} */}
+      </div>
       {/* Modal Section */}
       <h3 className="text-[26px] font-[700] text-left">1. Modal</h3>
       <CustomModalExample />

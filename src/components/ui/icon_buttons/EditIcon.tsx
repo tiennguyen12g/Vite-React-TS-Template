@@ -1,4 +1,3 @@
-import React from 'react';
 import clsx from "clsx";
 import { MdModeEditOutline } from "react-icons/md";
 interface Props {

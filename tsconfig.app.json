@@ -17,10 +17,24 @@
     "jsx": "react-jsx",
 
     /* Path aliases */
-    // "baseUrl": ".",
+     "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@tnbt-style-custom": ["./src/style_components/StyleComponents"]
+      "@components/*": ["./src/components/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@apis/*": ["./src/apis/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@types/*": ["./src/types/*"],
+      "@config/*": ["./src/config/*"],
+      "@state/*": ["./src/state/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@playground/*": ["./src/playground/*"]
     },
 
     /* Linting */
@@ -29,7 +43,7 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
   },
   "include": ["src"]
 }

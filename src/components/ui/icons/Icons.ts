@@ -31,6 +31,10 @@ import { MdEdit } from "react-icons/md";
 
 import { FaUserCircle } from "react-icons/fa";
 
+import { ImUpload3 } from "react-icons/im";
+import { IoMdCloudUpload } from "react-icons/io";
+import { IoMdAddCircleOutline } from "react-icons/io";
+
 // -- Social Icon
 import { FcGoogle } from "react-icons/fc";
 import { FaSquareFacebook } from "react-icons/fa6";
@@ -72,4 +76,8 @@ export const icons = {
     "google": FcGoogle,
     "facebook": FaSquareFacebook,
     "github": FaGithub,
+
+    "upload_file": ImUpload3,
+    "upload_cloud": IoMdCloudUpload,
+    "add_circle": IoMdAddCircleOutline
 }
