@@ -148,3 +148,13 @@ state/
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "javascript.preferences.importModuleSpecifier": "non-relative"
 ```
+
+#### List note for component
+```bash
+// Hooks
+// Types
+// Components
+// Libraries
+// Icons
+// Utils
+```
