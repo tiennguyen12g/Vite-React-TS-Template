@@ -16,6 +16,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
+  /* Viewport height fix for mobile browsers (address bar issue) */
+  --dvh: 1vh; /* Fallback - will be updated by useViewportHeight hook for browsers without native dvh support */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -169,7 +171,21 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow will be controlled per page (e.g., hidden for auth page) */
+  }
+  
   body {
     @apply bg-background text-foreground;
+  }
+  
+  #root {
+    height: 100%;
+    width: 100%;
   }
 }

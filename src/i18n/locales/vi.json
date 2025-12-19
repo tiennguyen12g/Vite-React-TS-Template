@@ -1,27 +1,19 @@
 {
-  "app": {
-    "title": "Theo Dõi Tiền Điện Tử",
-    "news": "Tin Tức Crypto",
-    "prices": "Các Đồng Tiền Chính",
-    "loading": "Đang tải...",
-    "error": "Lỗi khi tải dữ liệu",
-    "refresh": "Làm mới"
-  },
-  "coin": {
-    "price": "Giá",
-    "change24h": "Thay Đổi 24h",
-    "marketCap": "Vốn Hóa",
-    "volume": "Khối Lượng",
-    "rank": "Hạng"
-  },
-  "news": {
-    "readMore": "Đọc Thêm",
-    "source": "Nguồn",
-    "published": "Đã Đăng"
-  },
   "language": {
     "english": "Tiếng Anh",
     "vietnamese": "Tiếng Việt"
+  },
+    "error404": {
+    "title": "Trang không tìm thấy",
+    "description": "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.",
+    "description2": "Vui lòng kiểm tra lại đường dẫn hoặc quay lại trang chủ.",
+    "goHome": "Về trang chủ",
+    "goBack": "Quay lại",
+    "popularPages": "Các trang phổ biến:",
+    "orders": "Đơn hàng",
+    "products": "Sản phẩm",
+    "messages": "Tin nhắn",
+    "profile": "Hồ sơ"
   },
   "profile": {
     "title": "Cài Đặt Hồ Sơ",

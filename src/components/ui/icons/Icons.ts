@@ -1,5 +1,7 @@
 import { FaCheck } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+
 import { IoSearch } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
 
@@ -30,44 +32,48 @@ import { MdDeleteOutline } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 
 import { FaUserCircle } from "react-icons/fa";
-
-import { ImUpload3 } from "react-icons/im";
-import { IoMdCloudUpload } from "react-icons/io";
+import { IoBagAdd } from "react-icons/io5";
+import { BiSolidCartAdd } from "react-icons/bi";
 import { IoMdAddCircleOutline } from "react-icons/io";
+import { IoMdCloudUpload } from "react-icons/io";
 
 // -- Social Icon
 import { FcGoogle } from "react-icons/fc";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { FlagSquareIcons } from "./flags/1x1/FlagSquareIcons";
+import { FlagRectangleIcons } from "./flags/4x3/FlagRectangleIcons";
+// -- Country Flags
 export const icons = {
     "check": FaCheck,
     "close": IoClose,
+    "close_circle": IoIosCloseCircleOutline,
     "download": FiDownload,
     "search": IoSearch,
 
     "previous": GrFormPreviousLink,
     "next": GrFormNextLink,
 
-    "favorit-border": MdFavoriteBorder,
+    "favorit_border": MdFavoriteBorder,
     "favorit": MdFavorite,
 
-    "start-border": CiStar,
+    "start_border": CiStar,
     "start": FaStar,
 
-    "share-border": HiOutlineShare,
+    "share_border": HiOutlineShare,
     "share": HiShare,
 
-    "setting-border": IoSettingsOutline,
+    "setting_border": IoSettingsOutline,
     "setting": AiFillSetting, 
 
-    "notify-border": IoMdNotificationsOutline,
+    "notify_border": IoMdNotificationsOutline,
     "notify": IoMdNotifications,
 
-    "warning-border": TiWarningOutline,
+    "warning_border": TiWarningOutline,
     "warning": TiWarning,
 
     "delete": MdDelete,
-    "delete-border": MdDeleteOutline,
+    "delete_border": MdDeleteOutline,
 
     "edit": MdEdit,
 
@@ -76,8 +82,12 @@ export const icons = {
     "google": FcGoogle,
     "facebook": FaSquareFacebook,
     "github": FaGithub,
+    "bag_add": IoBagAdd,
+    "cart_add": BiSolidCartAdd,
+    "upload": IoMdCloudUpload,
+    "add_circle": IoMdAddCircleOutline,
 
-    "upload_file": ImUpload3,
-    "upload_cloud": IoMdCloudUpload,
-    "add_circle": IoMdAddCircleOutline
+    // -- Country Flags
+    "flag_square": FlagSquareIcons,
+    "flag_rectangle": FlagRectangleIcons,
 }

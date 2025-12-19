@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import path from "path";
+import fs from "fs";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -7,7 +8,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    port:5180
+    https: {
+      key: fs.readFileSync('./certs/localhost+2-key.pem'),
+      cert: fs.readFileSync('./certs/localhost+2.pem'),
+    },
+    port: 5180,
+    host: true,   // binds 0.0.0.0
   },
   base: "/Vite-React-TS-Template/",   // 👈 REQUIRED for GitHub Pages
   resolve: {
